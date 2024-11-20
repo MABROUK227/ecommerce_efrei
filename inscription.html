@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Products</a></li>
+                    <li><a href="inscription.html">inscription </a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="account.html">connexion</a></li>
+                </ul>
+            </nav>
+
+            
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+<body>
+    
+    <h1>Inscription</h1>
+    <form action="" method="post">
+        <div class="form-div">
+
+            <fieldset>
+                <legend>Details du compte</legend>
+     
+                <label for="name">Nom de l'utilisateur</label>
+                <input type="text" name="name" id="name" placeholder="Username" required>
+    
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Password" required>
+    
+                <label for="cmdp">Confirmations de mot de passe</label>
+                <input type="password" name="cmdp" id="cmdp" placeholder="Re-type password" required>
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="examples@email.com" required>
+            
+            </fieldset>
+    
+            <fieldset>
+                <legend>Details Personels</legend>
+    
+                
+                <
+    
+                <label for="dsc">Description :</label>
+                <textarea name="dsc" id="dsc" cols="30" rows="10" placeholder="Description"></textarea>
+    
+            </fieldset>
+
+        </div>
+        
+
+        <div class="DFbottom">
+            <fieldset class="bottom_F">
+
+                <input type="checkbox" name="condition" id="condition">
+                <label for="condition">j'accept les <a href="">Conditions Generales d'Utilisation </a>.</label>
+    
+                <button type="submit">J'accepte</button>
+    
+            </fieldset>
+        </div>
+    </form>
+</body>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Téléchargez Notre Application</h3>
+                <p>Téléchargez l'application pour Android et iOS.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="Play Store">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png" alt="Logo">
+                <p>Notre objectif est de rendre les plaisirs et les bienfaits du sport accessibles au plus grand nombre de manière durable.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Politique de Retour</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez-nous</h3>
+                <ul class="links">
+                    <li><a href="" target="_blank">LinkedIn</a></li>
+                    <li><a href="" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2024 RedStore. Tous droits réservés.</p>
+    </div>
+</div>
+</html>

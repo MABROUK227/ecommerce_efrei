@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Products</a></li>
+                    <li><a href="inscription.html">inscription </a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="account.html">connexion</a></li>
+                </ul>
+            </nav>
+
+            
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="images/buy-1.jpg" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="images/buy-1.jpg" onclick="img('images/buy-1.jpg')">
+          <img src="images/buy-2.jpg" onclick="img('images/buy-2.jpg')">
+          <img src="images/gallery-4.jpg" onclick="img('images/gallery-4.jpg')">
+          <img src="images/gallery-3.jpg" onclick="img('images/gallery-3.jpg')">
+          <img src="images/image-1.jpg" onclick="img('images/image-1.jpg')">
+          <img src="images/gallery-4.jpg" onclick="img('images/gallery-4.jpg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>t shirt puma</h3>
+        <h4> <small>$</small>9</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h5>Color-Rouge </h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+
+        <button>Add to Bag</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
